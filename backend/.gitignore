@@ -1,0 +1,42 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+.env
+/.env.backup
+/.env.production
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# GitHub safety rules
+.env.*
+!.env.example
+*.bak
+*.backup*
+*_backup.sql
+*.dump
+
+!.env.wellness.example
+
+# Never commit local backups or secrets
+*.backup*
+*.bak
+*_backup.sql
+*.dump
+*.sqlite*
+# Keep PHPUnit configuration file
+!phpunit.sqlite.xml

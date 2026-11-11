@@ -1,0 +1,15 @@
+FROM php:8.3-cli
+
+RUN sed -i 's|http://deb.debian.org|https://deb.debian.org|g; s|http://security.debian.org|https://security.debian.org|g' /etc/apt/sources.list.d/debian.sources
+
+RUN apt-get update && apt-get install -y git unzip libonig-dev libsqlite3-dev libxml2-dev libcurl4-openssl-dev libzip-dev \
+ && docker-php-ext-install pdo_sqlite pdo_mysql mbstring dom xml curl zip \
+ && rm -rf /var/lib/apt/lists/*
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+WORKDIR /app
+COPY composer.json composer.lock ./
+RUN echo "default_socket_timeout=900" > /usr/local/etc/php/conf.d/99-composer-timeout.ini && composer config -g process-timeout 2000 && composer install --no-interaction --prefer-dist --no-scripts
+COPY . .
+RUN composer dump-autoload --optimize --no-scripts
+CMD ["sh", "docker/start-local.sh"]
+

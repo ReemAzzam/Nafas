@@ -1,0 +1,18 @@
+vendor
+.env
+.git
+.docx-work
+deliverables
+node_modules
+storage/logs/*
+bootstrap/cache/*.php
+database/*.sqlite*
+
+# Local secrets and backups
+.env.*
+!.env.example
+*.backup*
+*.bak
+*_backup.sql
+*.dump
+*.sqlite*

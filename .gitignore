@@ -1,0 +1,42 @@
+# Environment files and secrets
+**/.env
+**/.env.*
+!**/.env.example
+!backend/.env.wellness.example
+
+# Dependencies and build output
+**/vendor/
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+**/.vite/
+
+# Local backups and database exports
+**/*.backup*
+**/*.bak
+**/*_backup.sql
+**/*.dump
+**/*.sqlite*
+
+# Logs and generated files
+**/*.log
+backend/bootstrap/cache/*.php
+admin/*.tsbuildinfo
+
+# Local IDE files
+**/.idea/
+**/.vscode/
+**/*.code-workspace
+# Keep PHPUnit configuration file
+!backend/phpunit.sqlite.xml
+
+# Temporary and downloaded fixture artifacts
+**/*.bak*
+backend/fix-auth-otp.php
+backend/storage/framework/lsp-*.php
+backend/database/seeders/fixtures/images/**/_files/
+backend/database/seeders/fixtures/images/**/*.html
+
+# Ignore downloaded webpage asset folders
+backend/database/seeders/fixtures/images/**/*_files/**

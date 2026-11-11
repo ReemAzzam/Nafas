@@ -1,0 +1,26 @@
+[
+  {
+    "id":"grounding", "title":"مهارات التعامل مع الضغط — مرجع للقراءة",
+    "url":"https://www.who.int/publications/i/item/9789240003927",
+    "keywords":["قلق","توتر","خوف","خايف","مضغوط","anxious","anxiety","stress","panic"],
+    "text":"يبدو أن الضغط متعب إلك. إذا بتحب، لاحظ الأشياء الموجودة حولك وإحساس قدميك بالأرض للحظات، وتوقف إذا ما ارتحت. شو أكتر شي عم يضغط عليك الآن؟",
+    "provenance":"Original brief supportive wording; reading reference only, not a quotation or extracted book passage.",
+    "reviewed":false
+  },
+  {
+    "id":"kindness", "title":"مهارات التعامل مع الضغط — مرجع للقراءة",
+    "url":"https://www.who.int/publications/i/item/9789240003927",
+    "keywords":["حزين","حزن","وحيد","وحده","تعبان","زعلان","sad","lonely","depressed"],
+    "text":"واضح إن هالشعور ثقيل عليك. فينا ناخد الموضوع خطوة صغيرة. هل في شخص بتثق فيه بتحب تحكي معه؟ وشو الشي اللي بتحب أفهمه عن يومك؟",
+    "provenance":"Original brief supportive wording; reading reference only, not a quotation or extracted book passage.",
+    "reviewed":false
+  },
+  {
+    "id":"values", "title":"مهارات التعامل مع الضغط — مرجع للقراءة",
+    "url":"https://www.who.int/publications/i/item/9789240003927",
+    "keywords":["هدف","قيم","بلا معنى","ضايع","meaning","purpose"],
+    "text":"شو في شي صغير مهم إلك، أو شخص بتحب تكون قريب منه اليوم؟ ممكن نختار خطوة بسيطة تناسب طاقتك، بدون ضغط.",
+    "provenance":"Original brief supportive wording; reading reference only, not a quotation or extracted book passage.",
+    "reviewed":false
+  }
+]
